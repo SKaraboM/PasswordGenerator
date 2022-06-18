@@ -34,7 +34,8 @@ button:hover{
     border: solid 2px #003d57;
 }
 hr{
-    border: solid grey 1px;
+    height: 1px;
+    background-color: #003d57;
     grid-column: span 2;
     width: 100%;
     opacity: 0.1
