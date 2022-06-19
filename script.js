@@ -16,6 +16,10 @@ function generatePassword(){
 
     passwordEl1.innerHTML = passwordString1;
     passwordEl2.innerHTML = passwordString2;
+
+    let passwordsList = [passwordString1, passwordString2]
+
+    localStorage.setItem("Passwords", JSON.stringify(passwordsList))
 }
 
 
