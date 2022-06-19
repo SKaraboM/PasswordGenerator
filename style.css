@@ -4,7 +4,19 @@ body {
     background:#012a3a;
     display: grid;
     color: white;
-    grid-template-rows: 50px 60px 100px 60px 60px;
+    min-width: 600px;
+    min-height: 600px
+    
+}
+.container{
+    width: 600px;
+    box-sizing: border-box;
+    height: 400px;
+    background: #01354971;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 25px;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 }
 .header{
@@ -20,6 +32,7 @@ body {
     grid-row: 3/4;
 }
 button{
+    margin: 25px 0;
     grid-row: 4/5;
     grid-column: 1/2;
     background: #68d295;
@@ -33,34 +46,43 @@ button:hover{
     opacity:0.6;
     border: solid 2px #003d57;
 }
+
 hr{
     height: 1px;
     background-color: #003d57;
     grid-column: span 2;
     width: 100%;
-    opacity: 0.1
+    opacity: 0.1;
+    margin: 25px 0;
 }
+
 .password-container{
     grid-column: span 2;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
+    margin: 25px 0 ;
 }
-.password-container > :nth-child(1){
+.password-container > :nth-child(1){  
     background: #003d57;
     padding: 10px;
-    height: 20px;
-    width: 40%;  
     text-align: center;
     color: #68d295;
     border-radius: 10px;
+    margin: 5px;
 }
+
 .password-container > :nth-child(2){
     background: #003d57;
     padding: 10px;
-    width: 40% ;
+    width: 40px ;
     height: 20px;
     text-align: center;
     color: #68d295;
-    border-radius: 10px;    
+    border-radius: 10px;  
+    margin: 5px;
+}
+
+.password-container > p{
+    color: rgb(252, 252, 252);
+    grid-column: 1/-1;
+    margin: 15px 5px;
+    opacity: 0.6;
 }
